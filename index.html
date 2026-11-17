@@ -197,9 +197,9 @@ const user = tg && tg.initDataUnsafe && tg.initDataUnsafe.user ? tg.initDataUnsa
 const UID = user ? String(user.id) : 'guest';
 
 const PLANS = [
-  {id:'p3',   title:'3 расклада',          note:'Попробовать',                stars:15, credits:3},
-  {id:'p10',  title:'10 раскладов',        note:'Самый популярный',           stars:39, credits:10, best:true},
-  {id:'unlim',title:'Безлимит на 30 дней', note:'Все функции без ограничений', stars:99, days:30}
+  {id:'p3',   title:'2 расклада',          note:'Попробовать',                stars:29, credits:2},
+  {id:'p10',  title:'5 раскладов',        note:'Самый популярный',           stars:49, credits:5, best:true},
+  {id:'unlim',title:'Безлимит на 20 дней', note:'Все функции без ограничений', stars:249, days:20}
 ];
 
 function fnv(s){ let h=0x811c9dc5; for(let i=0;i<s.length;i++){ h^=s.charCodeAt(i); h=Math.imul(h,0x01000193)>>>0; } return h>>>0; }
